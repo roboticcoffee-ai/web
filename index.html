@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Redefining the future of coffee with advanced robotics, precision, and passion. Experience automated brewing perfection.">
+  <title>Robotic Coffee | Automated Brewing Perfection</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=4.0">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="logo-link">
+        <span class="logo-main">ROBOTIC COFFEE</span>
+        <span class="logo-sub">BREWING PERFECTION</span>
+      </a>
+      
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu">
+        <a href="#experience" class="nav-link">EXPERIENCE</a>
+        <a href="#technology" class="nav-link">TECHNOLOGY</a>
+        <a href="#business" class="nav-link">BUSINESS</a>
+        <a href="#locations" class="nav-link">LOCATIONS</a>
+        <a href="#about" class="nav-link">ABOUT US</a>
+      </nav>
+      
+      <a href="#contact" class="header-cta-btn">CONTACT US</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="hero-video-bg" id="heroVideo">
+      <source src="coffee%20video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <!-- Video Gradients Overlay -->
+    <div class="hero-video-overlay"></div>
+    <div class="hero-bg-overlay"></div>
+    
+    <div class="hero-content-container">
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title">
+          COFFEE REIMAGINED <span class="accent-text">BY ROBOTS</span>
+        </h1>
+        <p class="hero-description">
+          We deliver more than just exceptional coffee. We create captivating experiences where robotics, precision and passion come together.
+        </p>
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-outline btn-long-clickable">
+            DISCOVER THE EXPERIENCE 
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sound On/Off Button -->
+    <button class="hero-sound-toggle" id="soundToggle" aria-label="Toggle Sound">
+      <svg class="sound-icon-on" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+      </svg>
+      <svg class="sound-icon-off" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <line x1="23" y1="9" x2="17" y2="15"></line>
+        <line x1="17" y1="9" x2="23" y2="15"></line>
+      </svg>
+    </button>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="brands-section">
+    <div class="brands-container">
+      <p class="brands-title">TRUSTED BY FORWARD-THINKING BRANDS</p>
+    </div>
+    
+    <div class="brands-marquee-container">
+      <div class="brands-marquee-track">
+        <!-- First set of logos -->
+        <div class="brand-item phoenix">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" letter-spacing="1">PHOENIX</text>
+            <text x="0" y="30" font-family="'Inter', sans-serif" font-weight="300" font-size="7" letter-spacing="3.5">MALLS</text>
+          </svg>
+        </div>
+        <div class="brand-item emaar">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="600" font-size="19" letter-spacing="3">EMAAR</text>
+          </svg>
+        </div>
+        <div class="brand-item wework">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5">wework</text>
+          </svg>
+        </div>
+        <div class="brand-item tata">
+          <svg class="brand-icon" viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+            <text x="0" y="18" font-family="'Outfit', sans-serif" font-weight="700" font-size="13" letter-spacing="1">TATA</text>
+            <text x="0" y="28" font-family="'Inter', sans-serif" font-weight="400" font-size="8" letter-spacing="1.5">TECHNOLOGIES</text>
+          </svg>
+        </div>
+        <div class="brand-item manipal">
+          <svg class="brand-icon" viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+            <text x="0" y="18" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" letter-spacing="0.5">manipalhospitals</text>
+            <text x="0" y="26" font-family="'Inter', sans-serif" font-weight="300" font-size="6" letter-spacing="1">LIFE'S ON</text>
+          </svg>
+        </div>
+        <div class="brand-item kempegowda">
+          <svg class="brand-icon" viewBox="0 0 130 30" width="130" height="30" fill="currentColor">
+            <text x="0" y="15" font-family="'Outfit', sans-serif" font-weight="700" font-size="9" letter-spacing="0.5">Kempegowda</text>
+            <text x="0" y="23" font-family="'Inter', sans-serif" font-weight="300" font-size="6" letter-spacing="0.5">INTERNATIONAL AIRPORT</text>
+            <text x="0" y="29" font-family="'Inter', sans-serif" font-weight="400" font-size="5" letter-spacing="0.5">BENGALURU</text>
+          </svg>
+        </div>
+        <div class="brand-item blue-tokai">
+          <svg class="brand-icon" viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+            <text x="0" y="20" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" letter-spacing="1">BLUE TOKAI</text>
+            <text x="0" y="28" font-family="'Inter', sans-serif" font-weight="300" font-size="6" letter-spacing="1">COFFEE ROASTERS</text>
+          </svg>
+        </div>
+        <div class="brand-item amazon">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5">amazon</text>
+          </svg>
+        </div>
+        <div class="brand-item starbucks">
+          <svg class="brand-icon" viewBox="0 0 110 30" width="110" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" letter-spacing="1.5">STARBUCKS</text>
+          </svg>
+        </div>
+        <div class="brand-item bluestone">
+          <svg class="brand-icon" viewBox="0 0 110 30" width="110" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="600" font-size="17" letter-spacing="2">BLUESTONE</text>
+          </svg>
+        </div>
+        
+        <!-- Second set of logos (duplicate for infinite scroll) -->
+        <div class="brand-item phoenix">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" letter-spacing="1">PHOENIX</text>
+            <text x="0" y="30" font-family="'Inter', sans-serif" font-weight="300" font-size="7" letter-spacing="3.5">MALLS</text>
+          </svg>
+        </div>
+        <div class="brand-item emaar">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="600" font-size="19" letter-spacing="3">EMAAR</text>
+          </svg>
+        </div>
+        <div class="brand-item wework">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5">wework</text>
+          </svg>
+        </div>
+        <div class="brand-item tata">
+          <svg class="brand-icon" viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+            <text x="0" y="18" font-family="'Outfit', sans-serif" font-weight="700" font-size="13" letter-spacing="1">TATA</text>
+            <text x="0" y="28" font-family="'Inter', sans-serif" font-weight="400" font-size="8" letter-spacing="1.5">TECHNOLOGIES</text>
+          </svg>
+        </div>
+        <div class="brand-item manipal">
+          <svg class="brand-icon" viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+            <text x="0" y="18" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" letter-spacing="0.5">manipalhospitals</text>
+            <text x="0" y="26" font-family="'Inter', sans-serif" font-weight="300" font-size="6" letter-spacing="1">LIFE'S ON</text>
+          </svg>
+        </div>
+        <div class="brand-item kempegowda">
+          <svg class="brand-icon" viewBox="0 0 130 30" width="130" height="30" fill="currentColor">
+            <text x="0" y="15" font-family="'Outfit', sans-serif" font-weight="700" font-size="9" letter-spacing="0.5">Kempegowda</text>
+            <text x="0" y="23" font-family="'Inter', sans-serif" font-weight="300" font-size="6" letter-spacing="0.5">INTERNATIONAL AIRPORT</text>
+            <text x="0" y="29" font-family="'Inter', sans-serif" font-weight="400" font-size="5" letter-spacing="0.5">BENGALURU</text>
+          </svg>
+        </div>
+        <div class="brand-item blue-tokai">
+          <svg class="brand-icon" viewBox="0 0 120 30" width="120" height="30" fill="currentColor">
+            <text x="0" y="20" font-family="'Outfit', sans-serif" font-weight="800" font-size="14" letter-spacing="1">BLUE TOKAI</text>
+            <text x="0" y="28" font-family="'Inter', sans-serif" font-weight="300" font-size="6" letter-spacing="1">COFFEE ROASTERS</text>
+          </svg>
+        </div>
+        <div class="brand-item amazon">
+          <svg class="brand-icon" viewBox="0 0 100 30" width="100" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5">amazon</text>
+          </svg>
+        </div>
+        <div class="brand-item starbucks">
+          <svg class="brand-icon" viewBox="0 0 110 30" width="110" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="700" font-size="16" letter-spacing="1.5">STARBUCKS</text>
+          </svg>
+        </div>
+        <div class="brand-item bluestone">
+          <svg class="brand-icon" viewBox="0 0 110 30" width="110" height="30" fill="currentColor">
+            <text x="0" y="22" font-family="'Outfit', sans-serif" font-weight="600" font-size="17" letter-spacing="2">BLUESTONE</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Experience Section -->
+  <section class="experience-section scroll-anim" id="experience">
+    <div class="experience-container">
+      <div class="experience-grid">
+        <div class="experience-content">
+          <span class="section-tag">THE SPECTACLE</span>
+          <h2 class="section-title">BARISTA CRAFT MEET<br>ROBOTIC <span class="accent-text">PRECISION.</span></h2>
+          <p class="section-description">
+            Witness the captivating spectacle of robotic brewing. Watch as advanced automation handles every movement with clinical precision, while delivering the rich, artisanal flavor of a premium hand-poured cup.
+          </p>
+          
+          <div class="experience-features-list">
+            <!-- Row 1 -->
+            <div class="experience-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                  <line x1="6" y1="2" x2="6" y2="4"></line>
+                  <line x1="10" y1="2" x2="10" y2="4"></line>
+                  <line x1="14" y1="2" x2="14" y2="4"></line>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Visual Spectacle</h5>
+                <p class="feature-row-desc">Live robotic brewing theater that engages and delights every guest.</p>
+              </div>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="experience-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Clinical Precision</h5>
+                <p class="feature-row-desc">Measured to the milligram, temperature-controlled to the exact degree.</p>
+              </div>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="experience-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Artisanal Beans</h5>
+                <p class="feature-row-desc">Hand-selected premium single-origin beans, roasted to perfection.</p>
+              </div>
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="experience-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Human Connection</h5>
+                <p class="feature-row-desc">Bridging state-of-the-art tech with warm traditional hospitality.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="experience-image-wrapper">
+          <img src="images/brew_experience.png" alt="Robotic arm brewing coffee" class="experience-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intelligence Section -->
+  <section class="intelligence-section scroll-anim" id="technology">
+    <div class="intelligence-container">
+      <h2 class="intelligence-main-title">INTELLIGENCE IN EVERY MOVEMENT</h2>
+      <div class="intelligence-underline"></div>
+      
+    </div>
+    
+    <div class="intelligence-marquee-container">
+      <div class="intelligence-marquee-track">
+        <!-- First set of cards -->
+        <!-- Card 1 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h4 class="card-title">FULLY AUTOMATED</h4>
+          <p class="card-desc">Advanced robotics handle the entire brewing process.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h4 class="card-title">24/7 AVAILABILITY</h4>
+          <p class="card-desc">Consistent performance day and night with zero downtime.</p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h4 class="card-title">CONTACTLESS EXPERIENCE</h4>
+          <p class="card-desc">Safe, hygienic and seamless ordering and delivery.</p>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h4 class="card-title">CONSISTENT QUALITY</h4>
+          <p class="card-desc">Every cup is crafted with precision for perfect taste.</p>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h4 class="card-title">SMART MONITORING</h4>
+          <p class="card-desc">Real-time analytics and remote system monitoring.</p>
+        </div>
+        
+        <!-- Card 6 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="9" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="5" rx="1"></rect>
+              <rect x="14" y="12" width="7" height="9" rx="1"></rect>
+              <rect x="3" y="16" width="7" height="5" rx="1"></rect>
+              <path d="M7 7h7M10 16h4M10 7v9"></path>
+            </svg>
+          </div>
+          <h4 class="card-title">EASY INTEGRATION</h4>
+          <p class="card-desc">Designed to fit beautifully into your existing space.</p>
+        </div>
+        
+        <!-- Second set of cards (duplicate for infinite scroll) -->
+        <!-- Card 1 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h4 class="card-title">FULLY AUTOMATED</h4>
+          <p class="card-desc">Advanced robotics handle the entire brewing process.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h4 class="card-title">24/7 AVAILABILITY</h4>
+          <p class="card-desc">Consistent performance day and night with zero downtime.</p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h4 class="card-title">CONTACTLESS EXPERIENCE</h4>
+          <p class="card-desc">Safe, hygienic and seamless ordering and delivery.</p>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <h4 class="card-title">CONSISTENT QUALITY</h4>
+          <p class="card-desc">Every cup is crafted with precision for perfect taste.</p>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h4 class="card-title">SMART MONITORING</h4>
+          <p class="card-desc">Real-time analytics and remote system monitoring.</p>
+        </div>
+        
+        <!-- Card 6 -->
+        <div class="intelligence-card">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="9" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="5" rx="1"></rect>
+              <rect x="14" y="12" width="7" height="9" rx="1"></rect>
+              <rect x="3" y="16" width="7" height="5" rx="1"></rect>
+              <path d="M7 7h7M10 16h4M10 7v9"></path>
+            </svg>
+          </div>
+          <h4 class="card-title">EASY INTEGRATION</h4>
+          <p class="card-desc">Designed to fit beautifully into your existing space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kiosk Success Section -->
+  <section class="success-section scroll-anim" id="business">
+    <div class="success-container">
+      <div class="success-grid">
+        <div class="success-image-wrapper">
+          <img src="images/robotic_kiosk.png" alt="Robotic Coffee Kiosk" class="success-image">
+        </div>
+        
+        <div class="success-content">
+          <span class="section-tag">BUSINESS IMPACT</span>
+          <h2 class="section-title">DESIGNED TO MAXIMIZE<br>YOUR <span class="accent-text">RETURNS.</span></h2>
+          <p class="section-description">
+            Deploy a futuristic highlight that attracts customers naturally. Our automated cafe kiosk optimizes operational efficiency while providing a reliable, consistent customer experience day and night.
+          </p>
+          
+          <div class="success-features-list">
+            <!-- Row 1 -->
+            <div class="success-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Elevated Traffic</h5>
+                <p class="feature-row-desc">The robotic spectacle naturally engages crowds, driving organic footfall and social sharing.</p>
+              </div>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="success-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Consistent Quality</h5>
+                <p class="feature-row-desc">Every drink is crafted with identical clinical precision, safeguarding your brand reputation.</p>
+              </div>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="success-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="4"></line>
+                  <line x1="18" y1="20" x2="18" y2="4"></line>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Optimized Cost</h5>
+                <p class="feature-row-desc">Minimal overhead and low maintenance requirements, translating to higher margins.</p>
+              </div>
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="success-feature-row">
+              <div class="feature-icon-wrapper">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="feature-text-block">
+                <h5 class="feature-row-title">Premium Identity</h5>
+                <p class="feature-row-desc">Elevate your corporate space or retail site with a high-end visual highlight.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- High Impact Spaces Section -->
+  <section class="spaces-section scroll-anim" id="locations">
+    <div class="spaces-container">
+      <h2 class="spaces-title">PERFECT FOR HIGH IMPACT SPACES</h2>
+      
+      <!-- Space list / icons row -->
+      <div class="spaces-icons-row">
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            </svg>
+          </div>
+          <span class="space-label">Airports</span>
+        </div>
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="9" y1="3" x2="9" y2="21"></line>
+              <line x1="15" y1="3" x2="15" y2="21"></line>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="3" y1="15" x2="21" y2="15"></line>
+            </svg>
+          </div>
+          <span class="space-label">Shopping Malls</span>
+        </div>
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18M9 21V10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v11M5 21V6a2 2 0 0 1 2-2h2M19 21V4a2 2 0 0 0-2-2h-2"/>
+            </svg>
+          </div>
+          <span class="space-label">Corporate Offices</span>
+        </div>
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+            </svg>
+          </div>
+          <span class="space-label">Universities</span>
+        </div>
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <span class="space-label">Hotels</span>
+        </div>
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+          </div>
+          <span class="space-label">Hospitals</span>
+        </div>
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="18" y="3" width="4" height="18" rx="1"></rect>
+              <rect x="10" y="8" width="4" height="13" rx="1"></rect>
+              <rect x="2" y="13" width="4" height="8" rx="1"></rect>
+            </svg>
+          </div>
+          <span class="space-label">Tech Parks</span>
+        </div>
+        <div class="space-icon-item">
+          <div class="space-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <span class="space-label">Exhibitions</span>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- Sub-gallery section -->
+    <div class="gallery-subsection">
+      <span class="gallery-tag">THE ROBOTIC COFFEE EXPERIENCE</span>
+      
+      <div class="gallery-carousel-container">
+        <button class="gallery-nav-btn prev-btn" id="gallery-prev" aria-label="Previous Image">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        
+        <div class="gallery-wrapper">
+          <div class="gallery-track">
+            <div class="gallery-item">
+              <img src="images/gallery_1.png" alt="Robotic arm holding a ceramic cup of coffee">
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_2.png" alt="Robotic arm pouring microfoam milk latte art">
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_3.png" alt="Futuristic robotic coffee kiosk in a lobby">
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_4.png" alt="Robotic arm holding cup">
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_5.png" alt="Robotic arm stacking premium takeaway cups">
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_6.png" alt="Robotic arm pouring milk latte art">
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_7.png" alt="Futuristic modern robotic coffee cafe interior with glass brewing stations">
+            </div>
+            <div class="gallery-item">
+              <img src="images/gallery_8.png" alt="Robotic arm arranging artisan coffee drinks on a tray">
+            </div>
+          </div>
+        </div>
+        
+        <button class="gallery-nav-btn next-btn" id="gallery-next" aria-label="Next Image">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Contact & Form Section -->
+  <section class="contact-section scroll-anim" id="contact">
+    <div class="contact-container">
+      <div class="contact-grid">
+        <div class="contact-info-side">
+          <h2 class="contact-title">BRING THE FUTURE OF<br>COFFEE TO YOUR BUSINESS</h2>
+          <p class="contact-subtitle">Let's create an unforgettable experience together.</p>
+          
+          <a href="mailto:hello@roboticcoffee.ai" class="btn btn-gold btn-discuss">
+            DISCUSS PARTNERSHIP
+            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+        
+        <div class="contact-form-side">
+          <form class="lead-form" id="leadForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" id="workEmail" placeholder="Work Email" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="businessOrg" placeholder="Business / Organisation" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="locationCity" placeholder="Preferred Location / City" required>
+              </div>
+            </div>
+            
+            <button type="submit" class="form-submit-btn">GET IN TOUCH</button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="about">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Logo & Socials -->
+        <div class="footer-col col-brand">
+          <a href="#" class="logo-link footer-logo">
+            <span class="logo-main">ROBOTIC COFFEE</span>
+          </a>
+          <p class="footer-brand-desc">
+            We are redefining the future of coffee with robotics, precision and unforgettable experiences.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.95 1.96C5.12 19.5 12 19.5 12 19.5s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96 29 29 0 0 0 .46-5.33 2.9 2.9 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Col 2: Get in touch -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">GET IN TOUCH</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg class="contact-list-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hello@roboticcoffee.ai">hello@roboticcoffee.ai</a>
+            </li>
+            <li>
+              <svg class="contact-list-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li>
+              <svg class="contact-list-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <a href="https://www.roboticcoffee.ai" target="_blank" rel="noopener noreferrer">www.roboticcoffee.ai</a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Col 3: Head Office -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">HEAD OFFICE</h4>
+          <p class="footer-address">
+            Robotic Coffee Technologies Pvt. Ltd.<br>
+            123, Innovation Drive,<br>
+            Bangalore, Karnataka 560001<br>
+            India
+          </p>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Robotic Coffee. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=4.0"></script>
+</body>
+</html>
